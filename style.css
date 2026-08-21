@@ -10,6 +10,7 @@ body {
   color: #2d2d2d;
   display: flex;
   flex-direction: column;
+  min-height: 100vh
 }
 
 .container {
@@ -31,6 +32,7 @@ body {
 
 .header__logo {
   width: 50px;
+  height: 50px;
   background: #fff;
   padding: 4px;
 }
@@ -77,6 +79,10 @@ body {
   animation: spin 0.8s linear infinite;
 }
 
+.loader.show {
+  display: block;
+}
+
 @keyframes spin {
   to { transform: rotate(360deg); }
 }
@@ -112,6 +118,21 @@ body {
   background: #2d2d2d;
   color: #fff;
   padding: 20px 0;
-  margin-top: 15rem;
   text-align: center;
+}
+
+.error {
+  display: none;
+  padding: 20px;
+  background: #fdecea;
+  border: 1px solid #e74c3c;
+  border-radius: 8px;
+  color: #c0392b;
+  text-align: center;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.error.show {
+  display: block;
 }
