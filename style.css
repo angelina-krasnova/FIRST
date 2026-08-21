@@ -136,3 +136,37 @@ body {
 .error.show {
   display: block;
 }
+
+/* Мобильная версия */
+/* Планшеты и телефоны (до 768px) */
+@media (max-width: 768px) {
+    .catalog {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 16px;
+    }
+    .filter__btn {
+    font-size: 13px;
+    padding: 6px 14px;
+    }
+    .main {
+    padding: 15px 0;
+    }
+}
+
+/* Маленькие телефоны (до 480px) */
+@media (max-width: 480px) {
+  .catalog {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 12px;
+  }
+  .header__logo {
+    width: 40px;
+    height: 40px;
+  }
+  .product-card__image {
+    height: 100px;
+  }
+  .product-card__title {
+    font-size: 12px;
+  }
+}
